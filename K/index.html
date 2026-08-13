@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>ＫＩＮＧ | Official Telegram Channel</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Pixel IDs
+    fbq('init', '1638616304500873');
+    fbq('init', '1021276750710648');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1638616304500873&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1021276750710648&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background: #080808;
+      color: #FFFFFF;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 16px;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .main-wrapper {
+      width: 100%;
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 1;
+    }
+
+    /* DP Container */
+    .profile-frame {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .dp-container {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      padding: 2px;
+      background: linear-gradient(135deg, #D4AF37 0%, #222222 50%, #AA771C 100%);
+    }
+
+    .profile-dp {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      background: #111;
+    }
+
+    /* Custom Metallic Verified Badge SVG */
+    .verified-svg {
+      position: absolute;
+      bottom: 2px;
+      right: 2px;
+      width: 28px;
+      height: 28px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
+    }
+
+    /* Title & SVG Sparkle Section */
+    .channel-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .channel-title {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Custom Golden Sparkle SVG */
+    .sparkle-svg {
+      width: 22px;
+      height: 22px;
+      fill: url(#gold-gradient);
+      flex-shrink: 0;
+    }
+
+    .sub-tagline {
+      font-size: 14px;
+      color: #8E8E93;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 24px;
+    }
+
+    .highlight-gold {
+      color: #D4AF37;
+      font-weight: 600;
+    }
+
+    /* Trust Stats Grid */
+    .luxury-stats {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #121214;
+      border: 1px solid #222226;
+      border-radius: 16px;
+      padding: 14px 8px;
+      margin-bottom: 28px;
+    }
+
+    .stat-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .stat-box:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: #222226;
+    }
+
+    .stat-number {
+      font-size: 16px;
+      font-weight: 700;
+      color: #D4AF37;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #6E6E73;
+      margin-top: 3px;
+      font-weight: 600;
+    }
+
+    /* Exact User Provided Button CSS */
+    .button {
+      --black: #000000;
+      --ch-black: #141414;
+      --eer-black: #1b1b1b;
+      --night-rider: #2e2e2e;
+      --white: #ffffff;
+      --af-white: #f3f3f3;
+      --ch-white: #e1e1e1;
+      border-radius: 20px;
+      width: 350px;
+      height: 39px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0px 15px;
+      border: none;
+      color: white;
+      position: relative;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 14px;
+      transition-duration: 0.2s;
+      background-color: var(--ch-black);
+      text-decoration: none;
+    }
+
+    .button:before,
+    .button:after {
+      content: "";
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      border-radius: 22px;
+      background: linear-gradient(
+        45deg,
+        var(--ch-black),
+        var(--eer-black),
+        var(--night-rider),
+        var(--ch-white),
+        var(--night-rider),
+        var(--eer-black),
+        var(--ch-black),
+        var(--ch-black)
+      );
+      background-size: 400%;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      z-index: -1;
+      animation: steam 20s linear infinite;
+    }
+
+    @keyframes steam {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    .button:after {
+      filter: blur(50px);
+    }
+
+    .tg-svg {
+      width: 18px;
+      height: 18px;
+      fill: #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    .micro-copy {
+      margin-top: 14px;
+      font-size: 11px;
+      color: #666666;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pulse-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 6px #22c55e;
+    }
+
+    /* Floating Advertiser Widget (Bottom Left) */
+    .advertiser-widget {
+      position: fixed;
+      bottom: 20px;
+      left: 16px;
+      background: #141416;
+      border: 1px solid #28282D;
+      border-radius: 50px;
+      padding: 6px 14px 6px 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      z-index: 9999;
+      transform: translateY(150px);
+      opacity: 0;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease;
+    }
+
+    .advertiser-widget.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .advertiser-dp {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .advertiser-info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .advertiser-tag {
+      font-size: 9px;
+      color: #71717A;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+
+    .advertiser-title {
+      font-size: 12px;
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hidden SVG Gradients for Metallic Gold Effects -->
+  <svg width="0" height="0" style="position:absolute;">
+    <defs>
+      <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFE082" />
+        <stop offset="50%" stop-color="#D4AF37" />
+        <stop offset="100%" stop-color="#AA771C" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <main class="main-wrapper">
+    
+    <!-- Profile DP + Verified Badge -->
+    <div class="profile-frame">
+      <div class="dp-container">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/69d1990d304932.07754744_photo_2026-03-13_11-47-42.jpg" alt="KING Logo" class="profile-dp">
+      </div>
+      
+      <!-- Verified Badge SVG -->
+      <svg class="verified-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.5213 2.62368C11.3147 2.15251 12.6853 2.15251 13.4787 2.62368L14.7989 3.40755C15.148 3.61483 15.6521 3.77854 16.0567 3.77124L17.5878 3.74362C18.7368 3.72288 19.7042 4.69025 19.6835 5.83925L19.6559 7.37033C19.6486 7.77493 19.8123 8.27902 20.0196 8.62813L20.8034 9.94833C21.2746 10.7417 21.2746 12.1123 20.8034 12.9057L20.0196 14.2259C19.8123 14.575 19.6486 15.0791 19.6559 15.4837L19.6835 17.0148C19.7042 18.1638 18.7368 19.1311 17.5878 19.1104L16.0567 19.0828C15.6521 19.0755 15.148 19.2392 14.7989 19.4465L13.4787 20.2303C12.6853 20.7015 11.3147 20.7015 10.5213 20.2303L9.20113 19.4465C8.85202 19.2392 8.34793 19.0755 7.94333 19.0828L6.41225 19.1104C5.26325 19.1311 4.29588 18.1638 4.31662 17.0148L4.34424 15.4837C4.35154 15.0791 4.18783 14.575 3.98055 14.2259L3.19668 12.9057C2.72551 12.1123 2.72551 10.7417 3.19668 9.94833L3.98055 8.62813C4.18783 8.27902 4.35154 7.77493 4.34424 7.37033L4.31662 5.83925C4.29588 4.69025 5.26325 3.72288 6.41225 3.74362L7.94333 3.77124C8.34793 3.77854 8.85202 3.61483 9.20113 3.40755L10.5213 2.62368Z" fill="url(#gold-gradient)"/>
+        <path d="M8.5 12L10.8 14.3L15.5 9.6" stroke="#000000" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Title with Gold SVG Sparkle -->
+    <div class="channel-header">
+      <h1 class="channel-title">
+        ＫＩＮＧ
+        <!-- SVG Sparkle Icon -->
+        <svg class="sparkle-svg" viewBox="0 0 24 24">
+          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+        </svg>
+      </h1>
+    </div>
+
+    <p class="sub-tagline">Cricket Predictions & Fun Chill Group.<br>Join <span class="highlight-gold">VIP Community</span> For Free.</p>
+
+    <!-- Stats Bar -->
+    <div class="luxury-stats">
+      <div class="stat-box">
+        <span class="stat-number">95%+</span>
+        <span class="stat-label">Accuracy</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">FREE</span>
+        <span class="stat-label">Access</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number">24/7</span>
+        <span class="stat-label">Updates</span>
+      </div>
+    </div>
+
+    <!-- Action Button (Using Exact User CSS) -->
+    <a href="https://t.me/+b4RkloiGYB40NTk1" target="_blank" class="button" onclick="trackConversion()">
+      <svg class="tg-svg" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+      </svg>
+      Join Telegram Channel
+    </a>
+
+    <div class="micro-copy">
+      <span class="pulse-dot"></span> Free VIP Access Active
+    </div>
+
+  </main>
+
+  <!-- Bottom Left Floating Advertiser Widget -->
+  <a href="https://quicklyads.vercel.app/" target="_blank" id="advertiserWidget" class="advertiser-widget">
+    <img src="https://d1yei2z3i6k35z.cloudfront.net/13184094/6a69c119dfd6c4.93432994_20260624_124814.jpg" alt="Ads by Quickly" class="advertiser-dp">
+    <div class="advertiser-info">
+      <span class="advertiser-tag">Promoted by</span>
+      <span class="advertiser-title">Ads by Quickly</span>
+    </div>
+  </a>
+
+  <script>
+    function trackConversion() {
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const widget = document.getElementById('advertiserWidget');
+      
+      // Slides up smoothly after 3 sec
+      setTimeout(() => {
+        widget.classList.add('show');
+        
+        // Stays for 20 sec, then goes down
+        setTimeout(() => {
+          widget.classList.remove('show');
+        }, 20000);
+
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
